@@ -14,7 +14,9 @@ RUN apt-get update -qq && \
 
 # Definir entorno de desarrollo
 ENV RAILS_ENV="development" \
-    BUNDLE_PATH="/usr/local/bundle"
+    BUNDLE_PATH="/usr/local/bundle" \
+    BUNDLE_BIN="/usr/local/bundle/bin" \
+    PATH="/usr/local/bundle/bin:$PATH"
 
 # Copiar el archivo de Gems y luego instalarlas
 COPY Gemfile Gemfile.lock ./
