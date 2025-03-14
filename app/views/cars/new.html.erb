@@ -1,11 +1,23 @@
-<% content_for :title, "New car" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+   <% content_for :title, "New car" %>
 
-<h1>New car</h1>
+   <h1>New car</h1>
 
-<%= render "form", car: @car %>
+    <%= render "form", car: @car %>
 
-<br>
+    <br>
 
-<div>
-  <%= link_to "Back to cars", cars_path %>
-</div>
+   <div>
+     <%= link_to "Back to cars", cars_path %> 
+    </div>
+</body>
+</html>
+
+
+

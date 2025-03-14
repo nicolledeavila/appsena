@@ -1,16 +1,26 @@
-<p style="color: green"><%= notice %></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href= "./app/assets/stylesheets/application.css">
+</head>
+<body>
+      <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Cars" %>
+      <% content_for :title, "Cars" %>
 
-<h1>Cars</h1>
+    <h1>Cars</h1>
 
-<div id="cars">
-  <% @cars.each do |car| %>
-    <%= render car %>
-    <p>
-      <%= link_to "Show this car", car %>
-    </p>
-  <% end %>
-</div>
+    <div id="cars">
+      <% @cars.each do |car| %>
+        <%= render car %>
+        <p>
+          <%= link_to "Show this car", car %>
+        </p>
+      <% end %>
+    </div>
 
-<%= link_to "New car", new_car_path %>
+    <%= link_to "New car", new_car_path %>
+</body>
+</html>
