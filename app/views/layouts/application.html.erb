@@ -29,7 +29,13 @@
   <nav class="navbar2">Subbarra</nav>
 
   <div class="main-content">
-    <aside class="menu">Menú</aside>
+    <aside class="menu">
+    <%= link_to "inicio", inicio_path%>
+
+    <%= link_to "student1", student1_path%>
+    
+    <%= link_to "student2", student2_path%>
+    </aside>
     <div class="container">
       <%= yield %> <%# Aquí se inyectará el contenido dinámico de cada vista %>
     </div>
